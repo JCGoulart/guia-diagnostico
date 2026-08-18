@@ -1,0 +1,91 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+import InfoCard from '@/components/astro/content/InfoCard.astro'
+---
+<section id="planejamento" class="animate-on-scroll bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-12 md:p-16 print:shadow-none print:rounded-none">
+  <SectionHeader title="2. Como Planejar e Executar um Diagnóstico Socioterritorial" accent="blue" />
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed mb-8">
+    <p>Produzir um diagnóstico não é uma tarefa improvisada; exige <strong>método, organização e planejamento</strong>. Antes de abrir a primeira planilha do CECAD ou ir a campo, a equipe da Vigilância Socioassistencial deve estruturar a preparação do estudo em <strong>4 etapas de planejamento</strong>:</p>
+  </div>
+
+  <!-- ================= FLUXOGRAMA ================= -->
+  <div class="flex flex-col md:flex-row items-stretch gap-4 mb-10">
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center flex flex-col justify-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Etapa 1: Alinhamento</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Definir objetivo &amp; equipe</p>
+    </div>
+    <span class="self-center text-institucional-blue font-bold rotate-90 md:rotate-0" aria-hidden="true">→</span>
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center flex flex-col justify-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Etapa 2: Escopo</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Perguntas orientadoras</p>
+    </div>
+    <span class="self-center text-institucional-blue font-bold rotate-90 md:rotate-0" aria-hidden="true">→</span>
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center flex flex-col justify-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Etapa 3: Cronograma</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Prazos, fluxo e entregas</p>
+    </div>
+    <span class="self-center text-institucional-blue font-bold rotate-90 md:rotate-0" aria-hidden="true">→</span>
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center flex flex-col justify-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Etapa 4: Coleta</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Sistemas &amp; campo</p>
+    </div>
+  </div>
+
+  <!-- ================= PACTAÇÃO ================= -->
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Pactuação e Alinhamento da Equipe</h3>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-10">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Designação Formal:</strong> Defina quem responderá pela condução do diagnóstico (a equipe da Vigilância Socioassistencial, com apoio do CadÚnico, CRAS e CREAS).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Sensibilização dos Atores:</strong> Realize uma reunião inicial com os coordenadores de proteção básica, especial e gestão para apresentar o objetivo do estudo e obter o engajamento das equipes.</span></li>
+  </ul>
+
+  <!-- ================= ESCOPO ================= -->
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Definição do Escopo e das Perguntas Orientadoras</h3>
+  <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">Antes de olhar os dados, a gestão precisa responder: <strong>para que servirá este diagnóstico?</strong> A resposta define o foco e a pergunta orientadora de cada estudo:</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+    <InfoCard title="Reordenamento" accent="blue">
+      <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Pergunta orientadora</p>
+      <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">“Onde estão os vazios de cobertura física e de transporte no município?”</p>
+    </InfoCard>
+    <InfoCard title="Elaboração do PMAS" accent="green">
+      <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Pergunta orientadora</p>
+      <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">“Qual o panorama geral das vulnerabilidades e das violações de direitos no município?”</p>
+    </InfoCard>
+    <InfoCard title="População Específica" accent="purple">
+      <p class="text-sm font-bold text-slate-800 dark:text-slate-200">Pergunta orientadora</p>
+      <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">“Quem são e onde estão os idosos/PCDs isolados no território?”</p>
+    </InfoCard>
+  </div>
+
+  <!-- ================= CRONOGRAMA ================= -->
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Cronograma e Matriz de Responsabilidades</h3>
+  <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Estipule um prazo realista de execução (geralmente entre <strong>30 a 60 dias</strong>) e divida os papéis:</p>
+  <div class="overflow-x-auto mb-10">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="bg-institucional-blue text-white">
+          <th class="text-left p-3">Etapa do Projeto</th>
+          <th class="text-left p-3">O que é feito?</th>
+          <th class="text-left p-3">Responsável</th>
+          <th class="text-left p-3">Prazo Sugerido</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+        <tr><td class="p-3 font-semibold text-slate-800 dark:text-slate-200">1. Preparação</td><td class="p-3">Definição do escopo e alinhamento com equipes</td><td class="p-3">Gestão e Vigilância</td><td class="p-3">Semana 1</td></tr>
+        <tr><td class="p-3 font-semibold text-slate-800 dark:text-slate-200">2. Coleta de Dados</td><td class="p-3">Extração do CECAD, RMA, Cadsuas e dados locais</td><td class="p-3">Vigilância e CadÚnico</td><td class="p-3">Semanas 2 e 3</td></tr>
+        <tr><td class="p-3 font-semibold text-slate-800 dark:text-slate-200">3. Análise e Redação</td><td class="p-3">Cruzamento de dados, mapas e elaboração da minuta</td><td class="p-3">Vigilância Socioassistencial</td><td class="p-3">Semanas 4 e 5</td></tr>
+        <tr><td class="p-3 font-semibold text-slate-800 dark:text-slate-200">4. Validação e Escuta</td><td class="p-3">Roda de conversa com CRAS/CREAS e apreciação no CMAS</td><td class="p-3">Gestão, Equipes e CMAS</td><td class="p-3">Semana 6</td></tr>
+        <tr><td class="p-3 font-semibold text-slate-800 dark:text-slate-200">5. Publicação</td><td class="p-3">Emissão do relatório final e inclusão nos planos locais</td><td class="p-3">Gestão do SUAS</td><td class="p-3">Semana 7</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ================= FONTES ================= -->
+  <div class="rounded-xl border border-institucional-blue/30 bg-institucional-lightBlue dark:bg-blue-900/20 p-6">
+    <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-4">Mapeamento das fontes e preparação</h3>
+    <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none">
+      <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Sistemas:</strong> É fundamental checar previamente se as senhas e perfis de acesso aos sistemas de informação — como o CECAD 2.0 (módulo gestor), o RMA e o Cadsuas — estão liberados para os profissionais que conduzirão o diagnóstico.</span></li>
+      <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Apoio de Dados Locais:</strong> Mapear e consolidar bases de dados locais não governamentais e intersetoriais — como malha de transporte público, cobertura da Saúde da Família (ESF) e delimitadores geográficos das áreas de abrangência dos CRAS e CREAS.</span></li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+---
+<div id="trabalho" class="mb-16 animate-on-scroll">
+  <SectionHeader title="11. Trabalho e fontes de renda" number="Bloco 2" accent="green" />
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed">
+    <p>Entre os adultos, <strong>32,7% trabalharam na semana de referência</strong> (2.844 de 8.700 pessoas). Considerando os últimos 12 meses, <strong>3.545 pessoas</strong> tiveram trabalho remunerado. Não há registro declarado de trabalho infantil.</p>
+  </div>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Forma de trabalho (ocupação principal)</h3>
+  <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 list-none">
+    <li class="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2"><span>Empregado com carteira assinada</span><strong class="text-slate-800 dark:text-slate-200">1.546</strong></li>
+    <li class="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2"><span>Conta própria / autônomo</span><strong class="text-slate-800 dark:text-slate-200">939</strong></li>
+    <li class="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2"><span>Militar / servidor público</span><strong class="text-slate-800 dark:text-slate-200">365</strong></li>
+    <li class="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2"><span>Doméstico com carteira / Aprendiz / Temporário rural / Sem carteira / outros</span><strong class="text-slate-800 dark:text-slate-200">174</strong></li>
+  </ul>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Fontes de renda das pessoas</h3>
+  <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 list-none">
+    <li class="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2"><span>Aposentadoria, pensão ou BPC</span><strong class="text-slate-800 dark:text-slate-200">2.117 (16,7%)</strong></li>
+    <li class="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2"><span>Pensão alimentícia</span><strong class="text-slate-800 dark:text-slate-200">837 (6,6%)</strong></li>
+    <li class="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2"><span>Doação / ajuda de não morador</span><strong class="text-slate-800 dark:text-slate-200">106</strong></li>
+    <li class="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2"><span>Seguro-desemprego / defeso e outras fontes</span><strong class="text-slate-800 dark:text-slate-200">48</strong></li>
+  </ul>
+
+  <div class="rounded-xl border border-institucional-green/30 bg-institucional-lightGreen dark:bg-green-900/20 p-4 mt-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-institucional-green dark:text-institucional-green/90 mb-2">Como reproduzir esta análise</p>
+    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 list-none">
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Extraia (tabela de pessoas):</strong> <code class="font-mono text-xs">cod_trabalhou_memb</code>, <code class="font-mono text-xs">cod_trabalho_12_meses_memb</code>, <code class="font-mono text-xs">cod_principal_trab_memb</code>, <code class="font-mono text-xs">dta_nasc_pessoa</code> e <code class="font-mono text-xs">cod_est_cadastral_memb</code>.</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Como tratar:</strong> relacione por <code class="font-mono text-xs">cod_familiar_fam</code>; células vazias de trabalho são classificadas por idade calculada (menores de 10 anos = "não se aplica").</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">O que observar:</strong> % que trabalhou na semana, grau de formalização (carteira) e as fontes de renda fora do trabalho (aposentadoria/BPC).</span></li>
+    </ul>
+  </div>
+
+  <p class="text-xs text-slate-400 mt-6">Fonte: CadÚnico junho/2026. Aposentadoria/pensão/BPC é a principal fonte de renda fora do trabalho.</p>
+</div>

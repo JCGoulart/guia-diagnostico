@@ -1,0 +1,38 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+
+const items = [
+  { href: '#apresentacao', label: '1. Apresentação' },
+  { href: '#planejamento', label: '2. Como Planejar e Executar um Diagnóstico Socioterritorial' },
+  { href: '#fundamentos', label: '3. Por que o Diagnóstico Socioterritorial é Indispensável?' },
+  { href: '#modelos', label: '4. Modelos e Abordagens para Elaboração de Diagnósticos' },
+  { href: '#quem-realiza', label: '5. Quem pode realizar o Diagnóstico Socioterritorial ?' },
+  { href: '#premissa', label: '6. Área de Cobertura Inadequada' },
+  { href: '#metodo', label: '7. Passo a Passo para Identificar Cobertura Inadequada' },
+  { href: '#aplicacao', label: '8. O Diagnóstico de Silva Jardim' },
+  { href: '#populacao', label: '9. População no CadÚnico' },
+  { href: '#renda', label: '10. Perfil de renda' },
+  { href: '#trabalho', label: '11. Trabalho e fontes de renda' },
+  { href: '#regioes', label: '12. População por região de transporte' },
+  { href: '#vulnerabilidade', label: '13. Vulnerabilidade por região' },
+  { href: '#transporte', label: '14. Acessibilidade (transporte público)' },
+  { href: '#cras', label: '15. CRAS hoje: demanda e capacidade' },
+  { href: '#justificativa', label: '16. Justificativa da relocalização' },
+  { href: '#proposta', label: '17. Proposta: CRAS CRIAR para Varginha' },
+]
+---
+<section id="sumario" class="animate-slide-left bg-white dark:bg-slate-800 shadow-xl rounded-2xl p-12 md:p-16 print:shadow-none print:rounded-none">
+  <div class="flex items-center justify-between mb-6">
+    <div>
+      <SectionHeader title="Sumário" />
+    </div>
+  </div>
+  <div class="space-y-1 text-sm">
+    {items.map((item) => (
+      <a href={item.href} class="flex items-center justify-between py-2 px-4 rounded hover:bg-institucional-lightBlue dark:hover:bg-slate-700 transition group">
+        <span class="font-semibold text-slate-700 dark:text-slate-200 group-hover:text-institucional-blue dark:group-hover:text-institucional-blue">{item.label}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-300 group-hover:text-institucional-blue"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    ))}
+  </div>
+</section>

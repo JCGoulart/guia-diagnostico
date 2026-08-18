@@ -1,0 +1,54 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+import AlertBox from '@/components/astro/content/AlertBox.astro'
+---
+<div id="metodo" class="mb-16 animate-on-scroll">
+  <SectionHeader title="7. Passo a Passo para Identificar Cobertura Inadequada" number="Bloco 1" subtitle="Passo a passo com Excel, Word e agentes de I.A." accent="blue" />
+
+  <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">O mapeamento a seguir <strong>não exige programação</strong>: qualquer equipe técnica de Vigilância Socioassistencial consegue executá-lo com ferramentas que já fazem parte do dia a dia do SUAS — Excel, Word e um chat com modelo de linguagem (I.A.).</p>
+
+  <AlertBox variant="success" title="O que você precisa para começar">
+    <ul class="space-y-2 text-sm list-none">
+      <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span><span><strong>Ferramentas simples:</strong> Excel (filtros, PROCV e tabelas dinâmicas), Word (relatório) e um chat com I.A. (resumo e revisão).</span></li>
+      <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span><span><strong>Zero programação:</strong> nenhuma etapa exige código, softwares caros ou conhecimentos avançados de informática.</span></li>
+      <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span><span><strong>O seu papel é o mais importante:</strong> definir a pergunta, validar os dados e interpretar os sinais — a ferramenta é apenas um apoio, nunca substitui o julgamento do analista.</span></li>
+    </ul>
+  </AlertBox>
+
+  <div class="flex flex-col md:flex-row items-center gap-3 mb-8">
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Passo 1: Coleta</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">CECAD + Cadsuas</p>
+    </div>
+    <span class="text-institucional-blue font-bold rotate-90 md:rotate-0" aria-hidden="true">→</span>
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Passo 2: Cruzamento</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Logística &amp; Transporte</p>
+    </div>
+    <span class="text-institucional-blue font-bold rotate-90 md:rotate-0" aria-hidden="true">→</span>
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Passo 3: Identificação de Sinais</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Capacidade vs. Vulnerabilidade</p>
+    </div>
+  </div>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Coleta e Tabulação de Dados (Excel)</h3>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-10">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span>Solicite à equipe do CadÚnico a base de dados do CECAD e extraia os dados.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span>Agrupe as famílias por localidade/bairro e filtre a faixa de extrema pobreza/pobreza (faixas 1 e 2, renda per capita de até <strong class="text-slate-800 dark:text-slate-200">R$ 218</strong>).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Colunas a extrair (tabela de famílias):</strong> <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cd_ibge</code> (município), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_familiar_fam</code> (código da família), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">nom_localidade_fam</code> (localidade/bairro), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">fx_rfpc</code> (faixa de renda per capita), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">vlr_renda_media_fam</code> (renda per capita em R$), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_local_domic_fam</code> (urbano/rural) e <code class="font-mono text-xs text-slate-700 dark:text-slate-300">marc_pbf</code> (beneficiária do PBF).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Colunas a extrair (tabela de pessoas):</strong> <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_familiar_fam</code> (junção com as famílias), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">dta_nasc_pessoa</code> (data de nascimento), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_trabalhou_memb</code> (trabalhou na semana), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_trabalho_12_meses_memb</code> (trabalho em 12 meses), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_principal_trab_memb</code> (ocupação principal) e <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_est_cadastral_memb</code> (estado cadastral).</span></li>
+  </ul>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Mapeamento de Acessibilidade e Transporte</h3>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-10">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span>Agrupe as comunidades pelas rotas de transporte público local (linhas de ônibus/vans, tempo de percurso, horários e frequência semanal).</span></li>
+  </ul>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Leitura dos Sinais de Alerta</h3>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Sinal A:</strong> CRAS concentrados na mesma mancha urbana.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Sinal B:</strong> Localidades de alta vulnerabilidade a mais de 30–40 minutos do centro.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Sinal C:</strong> Capacidade ociosa no RMA (baixo volume de famílias no PAIF) em unidades localizadas em áreas de menor vulnerabilidade.</span></li>
+  </ul>
+</div>

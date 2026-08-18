@@ -1,0 +1,48 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+import AlertBox from '@/components/astro/content/AlertBox.astro'
+---
+<div id="cras" class="mb-16 animate-on-scroll">
+  <SectionHeader title="15. CRAS hoje: demanda e capacidade" number="Bloco 4" subtitle="Cadsuas (08/2026) e RMA (média 2025–2026)" accent="pink" />
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed mb-8">
+    <p class="text-lg font-bold text-pink-600 dark:text-pink-400 leading-relaxed">“A produção da nossa equipe (RMA) condiz com a capacidade instalada e com a vulnerabilidade do território?”</p>
+    <p>Para respondê-la, comparamos a produção registrada no RMA com a capacidade das unidades (Cadsuas) e a vulnerabilidade das áreas atendidas.</p>
+    <p><strong>No Exemplo (Silva Jardim):</strong> identificação de <strong>capacidade ociosa no CRAS Criar (6,3 famílias PAIF/mês)</strong> enquanto áreas rurais não têm atendimento local.</p>
+  </div>
+
+  <div class="mt-8 overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="bg-institucional-blue text-white">
+          <th class="text-left p-3">Unidade</th>
+          <th class="text-left p-3">Bairro</th>
+          <th class="text-right p-3">Trabalhadores</th>
+          <th class="text-right p-3">PAIF (fam./mês)</th>
+          <th class="text-right p-3">Atendimentos/mês</th>
+          <th class="text-right p-3">Visitas/mês</th>
+          <th class="text-right p-3">Total 2017–26</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+        <tr class="bg-institucional-lightBlue"><td class="p-3 font-semibold text-slate-800 dark:text-slate-200">CRAS CRIAR</td><td class="p-3">Centro</td><td class="p-3 text-right">28</td><td class="p-3 text-right font-semibold text-institucional-blue">6,3</td><td class="p-3 text-right">357</td><td class="p-3 text-right">5,2</td><td class="p-3 text-right">28.166</td></tr>
+        <tr><td class="p-3">CRAS RENASCER</td><td class="p-3">Caju</td><td class="p-3 text-right">31</td><td class="p-3 text-right">30,3</td><td class="p-3 text-right">426</td><td class="p-3 text-right">13,6</td><td class="p-3 text-right">30.980</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <AlertBox variant="danger" title="Capacidade instalada × demanda">
+    <p class="text-sm">Apenas <strong>29 famílias em acompanhamento PAIF</strong> (jun/2026) frente a <strong>2.649 famílias em pobreza + extrema pobreza</strong>. Os <strong>59 trabalhadores</strong> (28 + 31) estão concentrados na sede — capacidade subutilizada por falta de cobertura territorial. O CRAS CRIAR (Centro) é o de menor demanda: 6,3 famílias PAIF/mês.</p>
+  </AlertBox>
+
+  <div class="rounded-xl border border-pink-500/30 bg-pink-50 dark:bg-pink-950/20 p-4 mt-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-pink-600 dark:text-pink-400 mb-2">Como reproduzir esta análise</p>
+    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 list-none">
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-pink-500/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Extraia:</strong> Cadsuas (capacidade instalada — trabalhadores, endereço, equipe) e RMA (produção — famílias PAIF, atendimentos).</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-pink-500/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Como tratar:</strong> cruze a capacidade de cada unidade com a produção média mensal (RMA) e com a vulnerabilidade do território que ela atende (CadÚnico).</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-pink-500/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">O que observar:</strong> capacidade ociosa (produção muito abaixo da capacidade) e unidades localizadas em áreas de menor vulnerabilidade.</span></li>
+    </ul>
+  </div>
+
+  <p class="text-xs text-slate-400 mt-6">Nota: campos B do RMA (pobreza/PBF/BPC) pouco preenchidos desde 2024 — a leitura de perfil usa o CadÚnico. Fontes: Cadsuas, RMA e CadÚnico.</p>
+</div>

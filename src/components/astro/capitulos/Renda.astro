@@ -1,0 +1,39 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+---
+<div id="renda" class="mb-16 animate-on-scroll">
+  <SectionHeader title="10. Perfil de renda" number="Bloco 2" subtitle="Renda per capita familiar" accent="green" />
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed">
+    <p><strong>2.649 famílias (45,7%)</strong> têm renda per capita de até <strong>R$ 218</strong> — o público prioritário da proteção social básica (pobreza + extrema pobreza). A mediana de renda (R$ 397) é muito inferior à média (R$ 739), indicando renda real baixa para a maioria, puxada para cima por poucos valores altos.</p>
+  </div>
+
+  <div class="mt-8 space-y-3">
+    <div class="flex items-center gap-4">
+      <div class="w-64 text-right text-sm text-slate-600 dark:text-slate-400">Extrema pobreza + pobreza (até R$ 218)</div>
+      <div class="flex-1 h-7 rounded bg-slate-200 dark:bg-slate-700"><div class="h-7 rounded bg-institucional-blue" style="width:100%"></div></div>
+      <div class="w-20 text-sm font-semibold text-slate-800 dark:text-white">2.649</div>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="w-64 text-right text-sm text-slate-600 dark:text-slate-400">De R$ 218,01 a ½ salário mínimo</div>
+      <div class="flex-1 h-7 rounded bg-slate-200 dark:bg-slate-700"><div class="h-7 rounded bg-institucional-green" style="width:41%"></div></div>
+      <div class="w-20 text-sm font-semibold text-slate-800 dark:text-white">1.088</div>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="w-64 text-right text-sm text-slate-600 dark:text-slate-400">Acima de ½ salário mínimo</div>
+      <div class="flex-1 h-7 rounded bg-slate-200 dark:bg-slate-700"><div class="h-7 rounded bg-amber-500" style="width:78%"></div></div>
+      <div class="w-20 text-sm font-semibold text-slate-800 dark:text-white">2.059</div>
+    </div>
+  </div>
+
+  <div class="rounded-xl border border-institucional-green/30 bg-institucional-lightGreen dark:bg-green-900/20 p-4 mt-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-institucional-green dark:text-institucional-green/90 mb-2">Como reproduzir esta análise</p>
+    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 list-none">
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Extraia:</strong> <code class="font-mono text-xs">fx_rfpc</code> (faixa de renda per capita) e <code class="font-mono text-xs">vlr_renda_media_fam</code> (renda per capita em R$).</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Como tratar:</strong> agrupe por faixa; considere pobreza + extrema pobreza as faixas 1 e 2 (até R$ 218); calcule média e mediana de renda.</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">O que observar:</strong> quantas famílias estão no público prioritário (faixas 1+2) e a distância entre média e mediana (sinal de renda concentrada em poucos).</span></li>
+    </ul>
+  </div>
+
+  <p class="text-xs text-slate-400 mt-6">Faixas de renda per capita familiar (fx_rfpc): faixas 1 e 2 agrupadas (até R$ 218, cortes vigentes do CadÚnico/Bolsa Família). Total de 5.796 famílias.</p>
+</div>

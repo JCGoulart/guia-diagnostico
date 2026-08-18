@@ -1,0 +1,54 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+---
+<div id="populacao" class="mb-16 animate-on-scroll">
+  <SectionHeader title="9. População no CadÚnico" number="Bloco 2" subtitle="Famílias e pessoas cadastradas — referência junho/2026" accent="green" />
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed mb-8">
+    <p class="text-lg font-bold text-institucional-green dark:text-institucional-green/90 leading-relaxed">“Quem é e onde está o público prioritário da Proteção Social Básica no nosso município?”</p>
+    <p>Para respondê-la, analisamos o perfil das famílias cadastradas no Cadastro Único: quem são, onde vivem e em que condições de renda se encontram.</p>
+    <p><strong>No Exemplo (Silva Jardim):</strong> análise das <strong>2.649 famílias em pobreza/extrema pobreza</strong> no CadÚnico.</p>
+  </div>
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed">
+    <p>Silva Jardim tem <strong>21.352 habitantes</strong> (Censo 2022) e <strong>12.710 pessoas cadastradas</strong> no Cadastro Único — <strong>59,5% da população</strong> — em <strong>5.796 famílias</strong> (média de 2,19 pessoas por família).</p>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+    <div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 p-5 text-center">
+      <div class="text-3xl font-extrabold text-slate-800 dark:text-white">5.796</div>
+      <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">famílias cadastradas</div>
+    </div>
+    <div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 p-5 text-center">
+      <div class="text-3xl font-extrabold text-slate-800 dark:text-white">12.710</div>
+      <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">pessoas cadastradas (59,5% da população)</div>
+    </div>
+    <div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 p-5 text-center">
+      <div class="text-3xl font-extrabold text-slate-800 dark:text-white">45,7%</div>
+      <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">famílias em pobreza + extrema pobreza (até R$ 218)</div>
+    </div>
+    <div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 p-5 text-center">
+      <div class="text-3xl font-extrabold text-slate-800 dark:text-white">35,9%</div>
+      <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">famílias beneficiárias do PBF</div>
+    </div>
+    <div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 p-5 text-center">
+      <div class="text-3xl font-extrabold text-slate-800 dark:text-white">R$ 739</div>
+      <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">renda média per capita</div>
+    </div>
+    <div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 p-5 text-center">
+      <div class="text-3xl font-extrabold text-slate-800 dark:text-white">R$ 397</div>
+      <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">renda mediana per capita</div>
+    </div>
+  </div>
+
+  <div class="rounded-xl border border-institucional-green/30 bg-institucional-lightGreen dark:bg-green-900/20 p-4 mt-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-institucional-green dark:text-institucional-green/90 mb-2">Como reproduzir esta análise</p>
+    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 list-none">
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Extraia:</strong> tabela de famílias — <code class="font-mono text-xs">cd_ibge</code>, <code class="font-mono text-xs">cod_familiar_fam</code>, <code class="font-mono text-xs">nom_localidade_fam</code>; tabela de pessoas — <code class="font-mono text-xs">cod_familiar_fam</code>, <code class="font-mono text-xs">dta_nasc_pessoa</code>.</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Como tratar:</strong> filtre pelo código do município, faça a junção famílias × pessoas por <code class="font-mono text-xs">cod_familiar_fam</code> e conte famílias e pessoas (por localidade, se necessário).</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-institucional-green/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">O que observar:</strong> total de cadastrados frente à população (Censo), nº médio de pessoas por família e a distribuição entre sede e localidades.</span></li>
+    </ul>
+  </div>
+
+  <p class="text-xs text-slate-400 mt-6">Pobreza + extrema pobreza = faixas fx_rfpc 1 e 2 (renda per capita até R$ 218). Fonte: CadÚnico junho/2026.</p>
+</div>

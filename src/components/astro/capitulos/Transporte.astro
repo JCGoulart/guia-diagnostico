@@ -1,0 +1,45 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+---
+<div id="transporte" class="mb-16 animate-on-scroll">
+  <SectionHeader title="14. Acessibilidade (transporte público)" number="Bloco 3" subtitle="Tempos estimados de percurso das regiões até o centro" accent="cyan" />
+
+  <div class="mt-8 overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="bg-institucional-blue text-white">
+          <th class="text-left p-3">Região / linha</th>
+          <th class="text-left p-3">Saída</th>
+          <th class="text-left p-3">Retorno</th>
+          <th class="text-left p-3">Tempo até o centro</th>
+          <th class="text-left p-3">Frequência</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+        <tr><td class="p-3">Aldeia Velha</td><td class="p-3">06:00</td><td class="p-3">07:10</td><td class="p-3 font-semibold text-amber-600 dark:text-amber-400">1h10min</td><td class="p-3">Seg a Sex</td></tr>
+        <tr><td class="p-3">Mato Alto</td><td class="p-3">06:00</td><td class="p-3">06:40</td><td class="p-3">40 min</td><td class="p-3">Seg a Sex</td></tr>
+        <tr><td class="p-3">Cesário Alvim / Varginha</td><td class="p-3">06:30</td><td class="p-3">07:10</td><td class="p-3">40 min</td><td class="p-3">Seg a Sex</td></tr>
+        <tr><td class="p-3">Cambuçaes</td><td class="p-3">08:00</td><td class="p-3">08:40</td><td class="p-3">40 min</td><td class="p-3">Seg a Sex</td></tr>
+        <tr><td class="p-3">Gaviões (via Pirineus)</td><td class="p-3">06:00</td><td class="p-3">06:40</td><td class="p-3">40 min</td><td class="p-3 font-semibold text-amber-600 dark:text-amber-400">Seg, Qua e Sex</td></tr>
+        <tr><td class="p-3">Bananeiras</td><td class="p-3">06:00</td><td class="p-3">07:10</td><td class="p-3 font-semibold text-amber-600 dark:text-amber-400">1h10min</td><td class="p-3">Seg a Sex</td></tr>
+        <tr><td class="p-3">Lagoa de Juturnaíba</td><td class="p-3">08:00</td><td class="p-3">08:40</td><td class="p-3">40 min</td><td class="p-3">Seg a Sex</td></tr>
+        <tr><td class="p-3">Imbaú (via Caxito)</td><td class="p-3">06:30</td><td class="p-3">07:10 (Caxito)</td><td class="p-3">30 a 40 min</td><td class="p-3">Seg a Sex</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed mt-8">
+    <p>Aldeia Velha e Bananeiras levam <strong>1h10</strong> (2h20 ida e volta); Gaviões tem linha só <strong>3 dias por semana</strong>. Idas ao CRAS competem com trabalho e escola — o deslocamento é uma barreira real de acesso.</p>
+  </div>
+
+  <div class="rounded-xl border border-cyan-500/30 bg-cyan-50 dark:bg-cyan-950/20 p-4 mt-6">
+    <p class="text-xs font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 mb-2">Como reproduzir esta análise</p>
+    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 list-none">
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Extraia:</strong> horários e rotas de ônibus/vans (site da Prefeitura ou da concessionária) e a localização das localidades atendidas.</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">Como tratar:</strong> monte uma tabela com saída, retorno, tempo até o centro e frequência semanal por rota.</span></li>
+      <li class="flex items-start gap-2"><span class="mt-1.5 inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/60 flex-shrink-0"></span><span><strong class="text-slate-700 dark:text-slate-300">O que observar:</strong> tempo de ida e volta, janela de permanência no centro e rotas com frequência reduzida (barreiras de acesso).</span></li>
+    </ul>
+  </div>
+
+  <p class="text-xs text-slate-400 mt-6">Fonte: informações de horários e rotas retiradas diretamente do site da Prefeitura de Silva Jardim (tempos de percurso estimados).</p>
+</div>

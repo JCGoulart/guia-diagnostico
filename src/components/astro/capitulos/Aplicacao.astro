@@ -1,0 +1,46 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+---
+<div id="aplicacao" class="mb-16 animate-on-scroll">
+  <SectionHeader title="8. O Diagnóstico de Silva Jardim" number="Bloco 1" accent="blue" />
+
+  <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">Ao aplicar esta metodologia no município de Silva Jardim, os dados revelaram uma <strong>nítida distorção de cobertura territorial</strong>:</p>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-3">Qual a situação atual da rede ?</h3>
+  <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Realizando a análise dos dados, foi identificado que Silva Jardim possui <strong>5.796 famílias e 12.710 pessoas</strong> cadastradas no CadÚnico (junho/2026).</p>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-4">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">CRAS CRIAR:</strong> Localizado no Centro.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">CRAS RENASCER:</strong> Localizado no bairro Caju.</span></li>
+  </ul>
+  <p class="text-sm text-slate-600 dark:text-slate-400 mb-10">Ambos os CRAS estão situados na malha urbana central, gerando <strong>sobreposição de cobertura</strong>, enquanto nenhuma das 8 regiões rurais conta com unidade própria.</p>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-3">⚠️ Consequência Direta para a População</h3>
+  <div class="overflow-x-auto mb-10">
+    <table class="w-full text-sm text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 rounded-lg">
+      <thead>
+        <tr class="bg-institucional-lightBlue dark:bg-slate-700/50 text-left">
+          <th class="px-4 py-3 font-bold text-slate-800 dark:text-slate-200">Indicador de Impacto</th>
+          <th class="px-4 py-3 font-bold text-slate-800 dark:text-slate-200">Dado Apurado em Silva Jardim</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-200 dark:border-slate-700">
+          <td class="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">População Afetada</td>
+          <td class="px-4 py-3">33% dos moradores do município vivem fora da sede e dependem de ônibus para acessar o CRAS.</td>
+        </tr>
+        <tr class="border-t border-slate-200 dark:border-slate-700">
+          <td class="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">Tempo de Deslocamento</td>
+          <td class="px-4 py-3">De 40 minutos a 1h10min apenas para ir ao centro — tempo estipulado de acordo com a análise das rotas de transporte.</td>
+        </tr>
+        <tr class="border-t border-slate-200 dark:border-slate-700">
+          <td class="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">Janela de Permanência</td>
+          <td class="px-4 py-3">Os ônibus saem das localidades entre 06:00 e 08:00. Se o usuário perder o retorno, fica retido a tarde toda.</td>
+        </tr>
+        <tr class="border-t border-slate-200 dark:border-slate-700">
+          <td class="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">Inversão da Proteção</td>
+          <td class="px-4 py-3">As famílias em maior extrema pobreza são justamente as que estão mais distantes da rede de atendimento.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

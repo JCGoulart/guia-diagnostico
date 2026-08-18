@@ -1,0 +1,27 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+---
+<div id="metodologia" class="mb-16 animate-on-scroll">
+  <SectionHeader title="1.2 Metodologia prática: como identificar cobertura inadequada" number="Bloco 1" subtitle="Passo a passo sem programação — Excel, Word e chat com I.A." accent="blue" />
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed">
+    <p>Para os trabalhadores da assistência social, o diagnóstico pode ser feito sem programação, usando <strong>Excel, Word e chat com I.A.</strong>. A pergunta orientadora: <em>“o território do CRAS está coberto? Quem fica de fora?”</em></p>
+  </div>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Passo a passo</h3>
+  <ol class="space-y-4 text-sm text-slate-600 dark:text-slate-400 list-none">
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-institucional-blue text-white text-xs font-bold flex-shrink-0">1</span><span><strong class="text-slate-800 dark:text-slate-200">Planejar e coletar (Excel):</strong> baixar a tabulação do CECAD 2.0 (Gestor do CadÚnico); filtrar o município; criar faixas de renda (SE/PROCV); montar Tabela Dinâmica de famílias e pessoas por localidade; juntar unidades (endereço, equipe, famílias PAIF) e transporte.</span></li>
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-institucional-blue text-white text-xs font-bold flex-shrink-0">2</span><span><strong class="text-slate-800 dark:text-slate-200">Ler os sinais de cobertura inadequada:</strong> (a) unidades concentradas na mesma área e nenhuma nas demais regiões; (b) localidades com muitas famílias em pobreza a mais de 30–40 min da unidade; (c) capacidade ociosa (PAIF baixo onde a vulnerabilidade é baixa); (d) cobertura do PAIF muito abaixo das famílias em pobreza.</span></li>
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-institucional-blue text-white text-xs font-bold flex-shrink-0">3</span><span><strong class="text-slate-800 dark:text-slate-200">Usar I.A. e Word como apoio:</strong> resumir a tabela num prompt de chat (sem dados pessoais), gerar o relatório preliminar no Word, validar com a equipe e o CMAS. A I.A. apoia, mas não substitui o julgamento do analista.</span></li>
+  </ol>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Aplicado a Silva Jardim</h3>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-green flex-shrink-0"></span><span>Os sinais apontaram <strong>2 CRAS na sede</strong> (Centro + Caju) e nenhum nas 8 rotas rurais.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-green flex-shrink-0"></span><span>Varginha/Cesário Alvim: <strong>791 pessoas em pobreza</strong> a 40 min do centro.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-green flex-shrink-0"></span><span>CRAS CRIAR (Centro) com apenas <strong>6,3 famílias PAIF/mês</strong> (capacidade ociosa).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-green flex-shrink-0"></span><span>Conclusão: <strong>realocar 1 unidade para Varginha</strong> — foco deste diagnóstico.</span></li>
+  </ul>
+
+  <p class="text-xs text-slate-400 mt-6">Método adaptado do assessoramento de Itaguaí: planejamento → coleta → análise → disseminação, com ferramentas acessíveis (Excel, Word, chat com I.A.).</p>
+</div>

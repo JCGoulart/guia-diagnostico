@@ -1,0 +1,32 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+---
+<div id="premissa" class="mb-16 animate-on-scroll">
+  <SectionHeader title="6. Área de Cobertura Inadequada" number="Bloco 1" subtitle="O que define uma cobertura inadequada dos equipamentos do SUAS" accent="blue" />
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed mb-8">
+    <p class="text-lg font-bold text-institucional-blue dark:text-institucional-blue/90 leading-relaxed">“Os nossos equipamentos do SUAS estão onde a pobreza está, ou estão apenas onde a malha urbana é mais consolidada?”</p>
+    <p>Para respondê-la, examinamos a distribuição territorial dos equipamentos da Proteção Social Básica em relação às vulnerabilidades do município.</p>
+    <p><strong>No Exemplo (Silva Jardim):</strong> identificou-se que <strong>100% dos CRAS</strong> estão na sede urbana, deixando <strong>33% da população rural</strong> dependente de transporte longo.</p>
+  </div>
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed mb-6">
+    <p>Em muitos municípios, a distribuição dos equipamentos da Proteção Social Básica (CRAS) segue uma <strong>lógica histórica de ocupação urbana</strong>, e não a distribuição real da pobreza.</p>
+    <p>Uma <strong>cobertura inadequada</strong> ocorre quando:</p>
+  </div>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Existe duplicidade de atendimento:</strong> Dois ou mais CRAS cobrem o mesmo território urbano central, disputando o mesmo público-alvo.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Existem vazios de cobertura:</strong> Comunidades rurais, periféricas ou de difícil acesso ficam sem referência física próxima.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">A barreira do transporte se impõe:</strong> O usuário precisa comprometer renda ou tempo excessivo de deslocamento para acessar um direito.</span></li>
+  </ul>
+
+  <figure class="mt-8">
+    <img
+      src="/images/mapa-social-silva-jardim.png"
+      alt="Mapa social da região de Silva Jardim (RJ)"
+      class="w-full h-auto rounded-xl border border-slate-200 dark:border-slate-700"
+      loading="lazy"
+    />
+    <figcaption class="text-xs text-slate-400 dark:text-slate-500 mt-2">Mapa social da região de Silva Jardim (RJ) — retrato territorial que mostra como se encontra a distribuição da população e das localidades, servindo de referência para a análise de cobertura.</figcaption>
+  </figure>
+</div>

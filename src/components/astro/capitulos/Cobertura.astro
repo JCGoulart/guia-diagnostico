@@ -1,0 +1,127 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+import AlertBox from '@/components/astro/content/AlertBox.astro'
+---
+<div id="cobertura" class="mb-16 animate-on-scroll">
+  <SectionHeader title="1.0 Diagnóstico de Cobertura e Descentralização" number="Bloco 1" accent="blue" />
+
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed mb-8">
+    <p class="text-lg font-bold text-institucional-blue dark:text-institucional-blue/90 leading-relaxed">“Os nossos equipamentos do SUAS estão onde a pobreza está, ou estão apenas onde a malha urbana é mais consolidada?”</p>
+    <p>Para respondê-la, examinamos a distribuição territorial dos equipamentos da Proteção Social Básica em relação às vulnerabilidades do município.</p>
+    <p><strong>No Exemplo (Silva Jardim):</strong> identificou-se que <strong>100% dos CRAS</strong> estão na sede urbana, deixando <strong>33% da população rural</strong> dependente de transporte longo.</p>
+  </div>
+
+  <!-- ================= 1.1 A PREMISSA ================= -->
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">1.1 A Premissa: O que significa “Cobertura Inadequada”?</h3>
+  <div class="prose max-w-none text-slate-700 dark:text-slate-300 space-y-4 text-base leading-relaxed mb-6">
+    <p>Em muitos municípios, a distribuição dos equipamentos da Proteção Social Básica (CRAS) segue uma <strong>lógica histórica de ocupação urbana</strong>, e não a distribuição real da pobreza.</p>
+    <p>Uma <strong>cobertura inadequada</strong> ocorre quando:</p>
+  </div>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-10">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Existe duplicidade de atendimento:</strong> Dois ou mais CRAS cobrem o mesmo território urbano central, disputando o mesmo público-alvo.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Existem vazios de cobertura:</strong> Comunidades rurais, periféricas ou de difícil acesso ficam sem referência física próxima.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">A barreira do transporte se impõe:</strong> O usuário precisa comprometer renda ou tempo excessivo de deslocamento para acessar um direito.</span></li>
+  </ul>
+
+  <!-- ================= 1.2 O MÉTODO ================= -->
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">1.2 O Método: Passo a Passo para Identificar Cobertura Inadequada</h3>
+  <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">O mapeamento a seguir <strong>não exige programação</strong>: qualquer equipe técnica de Vigilância Socioassistencial consegue executá-lo com ferramentas que já fazem parte do dia a dia do SUAS — Excel, Word e um chat com modelo de linguagem (I.A.).</p>
+
+  <AlertBox variant="success" title="O que você precisa para começar">
+    <ul class="space-y-2 text-sm list-none">
+      <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span><span><strong>Ferramentas simples:</strong> Excel (filtros, PROCV e tabelas dinâmicas), Word (relatório) e um chat com I.A. (resumo e revisão).</span></li>
+      <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span><span><strong>Zero programação:</strong> nenhuma etapa exige código, softwares caros ou conhecimentos avançados de informática.</span></li>
+      <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span><span><strong>O seu papel é o mais importante:</strong> definir a pergunta, validar os dados e interpretar os sinais — a ferramenta é apenas um apoio, nunca substitui o julgamento do analista.</span></li>
+    </ul>
+  </AlertBox>
+
+  <div class="flex flex-col md:flex-row items-center gap-3 mb-8">
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Passo 1: Coleta</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">CECAD + Cadsuas</p>
+    </div>
+    <span class="text-institucional-blue font-bold rotate-90 md:rotate-0" aria-hidden="true">→</span>
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Passo 2: Cruzamento</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Logística &amp; Transporte</p>
+    </div>
+    <span class="text-institucional-blue font-bold rotate-90 md:rotate-0" aria-hidden="true">→</span>
+    <div class="w-full md:flex-1 rounded-xl border border-institucional-blue/40 bg-institucional-lightBlue dark:bg-blue-900/20 p-4 text-center">
+      <p class="text-sm font-bold text-institucional-blue dark:text-institucional-blue/90">Passo 3: Identificação de Sinais</p>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Capacidade vs. Vulnerabilidade</p>
+    </div>
+  </div>
+
+  <p class="text-base font-bold text-slate-800 dark:text-slate-200 mb-4">Passo a Passo Operacional</p>
+
+  <h4 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-3">Coleta e Tabulação de Dados (Excel)</h4>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-8">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span>Solicite à equipe do CadÚnico a base de dados do CECAD e extraia os dados.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span>Agrupe as famílias por localidade/bairro e filtre a faixa de extrema pobreza/pobreza (faixas 1 e 2, renda per capita de até <strong class="text-slate-800 dark:text-slate-200">R$ 218</strong>).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Colunas a extrair (tabela de famílias):</strong> <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cd_ibge</code> (município), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_familiar_fam</code> (código da família), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">nom_localidade_fam</code> (localidade/bairro), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">fx_rfpc</code> (faixa de renda per capita), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">vlr_renda_media_fam</code> (renda per capita em R$), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_local_domic_fam</code> (urbano/rural) e <code class="font-mono text-xs text-slate-700 dark:text-slate-300">marc_pbf</code> (beneficiária do PBF).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Colunas a extrair (tabela de pessoas):</strong> <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_familiar_fam</code> (junção com as famílias), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">dta_nasc_pessoa</code> (data de nascimento), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_trabalhou_memb</code> (trabalhou na semana), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_trabalho_12_meses_memb</code> (trabalho em 12 meses), <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_principal_trab_memb</code> (ocupação principal) e <code class="font-mono text-xs text-slate-700 dark:text-slate-300">cod_est_cadastral_memb</code> (estado cadastral).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span>Mapeie os endereços dos CRAS no <strong class="text-slate-800 dark:text-slate-200">Cadsuas</strong> e a capacidade operacional/visitas registradas no <strong class="text-slate-800 dark:text-slate-200">RMA</strong>.</span></li>
+  </ul>
+
+  <h4 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-3">Mapeamento de Acessibilidade e Transporte</h4>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-8">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span>Agrupe as comunidades pelas rotas de transporte público local (linhas de ônibus/vans, tempo de percurso, horários e frequência semanal).</span></li>
+  </ul>
+
+  <h4 class="text-base font-bold text-slate-800 dark:text-slate-200 mb-3">Leitura dos Sinais de Alerta</h4>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-10">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Sinal A:</strong> CRAS concentrados na mesma mancha urbana.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Sinal B:</strong> Localidades de alta vulnerabilidade a mais de 30–40 minutos do centro.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Sinal C:</strong> Capacidade ociosa no RMA (baixo volume de famílias no PAIF) em unidades localizadas em áreas de menor vulnerabilidade.</span></li>
+  </ul>
+
+  <!-- ================= 1.3 APLICAÇÃO PRÁTICA ================= -->
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">1.3 Aplicação Prática: O Diagnóstico de Silva Jardim (RJ)</h3>
+  <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">Ao aplicar esta metodologia no município de Silva Jardim, os dados revelaram uma <strong>nítida distorção de cobertura territorial</strong>:</p>
+
+  <h4 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-3">📍 A Situação Atual da Rede</h4>
+  <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Silva Jardim possui <strong>5.796 famílias e 12.710 pessoas</strong> cadastradas no CadÚnico (junho/2026). No entanto:</p>
+  <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none mb-4">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">CRAS CRIAR:</strong> Localizado no Centro (desde 1999).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-institucional-blue flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">CRAS RENASCER:</strong> Localizado no bairro Caju (relocalizado em dez/2025).</span></li>
+  </ul>
+  <p class="text-sm text-slate-600 dark:text-slate-400 mb-10">Ambos os CRAS estão situados na malha urbana central (sede), gerando <strong>sobreposição de cobertura</strong>, enquanto nenhuma das 8 regiões rurais conta com unidade própria.</p>
+
+  <h4 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-3">⚠️ Consequência Direta para a População</h4>
+  <div class="overflow-x-auto mb-10">
+    <table class="w-full text-sm text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 rounded-lg">
+      <thead>
+        <tr class="bg-institucional-lightBlue dark:bg-slate-700/50 text-left">
+          <th class="px-4 py-3 font-bold text-slate-800 dark:text-slate-200">Indicador de Impacto</th>
+          <th class="px-4 py-3 font-bold text-slate-800 dark:text-slate-200">Dado Apurado em Silva Jardim</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-slate-200 dark:border-slate-700">
+          <td class="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">População Afetada</td>
+          <td class="px-4 py-3">33% dos moradores do município vivem fora da sede e dependem de ônibus para acessar o CRAS.</td>
+        </tr>
+        <tr class="border-t border-slate-200 dark:border-slate-700">
+          <td class="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">Tempo de Deslocamento</td>
+          <td class="px-4 py-3">De 40 minutos a 1h10min apenas para ir ao centro.</td>
+        </tr>
+        <tr class="border-t border-slate-200 dark:border-slate-700">
+          <td class="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">Janela de Permanência</td>
+          <td class="px-4 py-3">Os ônibus saem das localidades entre 06:00 e 08:00. Se o usuário perder o retorno, fica retido a tarde toda.</td>
+        </tr>
+        <tr class="border-t border-slate-200 dark:border-slate-700">
+          <td class="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">Inversão da Proteção</td>
+          <td class="px-4 py-3">As famílias em maior extrema pobreza são justamente as que estão mais distantes da rede de atendimento.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ================= CONCLUSÃO ================= -->
+  <AlertBox variant="info" title="💡 Conclusão e Encaminhamento do Bloco">
+    <div class="space-y-3 text-sm">
+      <p>A análise de dados confirmou que a baixa demanda registrada no <strong>CRAS CRIAR</strong> (apenas 6,3 famílias acompanhadas no PAIF/mês) não é falta de necessidade da população, mas sim <strong>barreira de acesso geográfico</strong>.</p>
+      <p>Esse achado justifica a necessidade de <strong>reordenamento da rede</strong> com a relocalização de uma unidade da sede para o distrito rural de <strong>Varginha/Cesário Alvim</strong>, tema detalhado nos blocos seguintes.</p>
+    </div>
+  </AlertBox>
+</div>

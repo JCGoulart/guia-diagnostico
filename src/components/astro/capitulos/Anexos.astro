@@ -1,0 +1,55 @@
+---
+import SectionHeader from '@/components/astro/layout/SectionHeader.astro'
+---
+<div id="anexos" class="mb-16 animate-on-scroll">
+  <SectionHeader title="Anexos — Fontes e notas metodológicas" number="Anexos" subtitle="Campos do CadÚnico utilizados e verificação de uso correto" accent="slate" />
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Fontes de dados</h3>
+  <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 list-none">
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-slate-400 flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">CadÚnico/CECAD junho/2026</strong> (referência 12/06/2026) — parquets processados com famílias e pessoas de Silva Jardim.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-slate-400 flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">RMA 2017–2026</strong> — Registro Mensal de Atendimentos das unidades CRAS.</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-slate-400 flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Cadsuas (08/2026)</strong> — cadastro nacional das unidades CRAS (endereço, equipe).</span></li>
+    <li class="flex items-start gap-3"><span class="mt-1.5 inline-block w-2 h-2 rounded-full bg-slate-400 flex-shrink-0"></span><span><strong class="text-slate-800 dark:text-slate-200">Transporte</strong> — planilha de rotas com estimativas de tempo (não substitui estudo de campo).</span></li>
+  </ul>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Campos do CadÚnico utilizados</h3>
+  <div class="mt-4 overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="bg-institucional-blue text-white">
+          <th class="text-left p-3">Campo</th>
+          <th class="text-left p-3">Descrição</th>
+          <th class="text-left p-3">Uso no diagnóstico</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+        <tr><td class="p-3 font-mono text-xs">d.cd_ibge</td><td class="p-3">Código do município</td><td class="p-3">Filtro de Silva Jardim (3305604)</td></tr>
+        <tr><td class="p-3 font-mono text-xs">d.cod_familiar_fam</td><td class="p-3">Código da família</td><td class="p-3">Identificador e junção famílias × pessoas</td></tr>
+        <tr><td class="p-3 font-mono text-xs">d.nom_localidade_fam</td><td class="p-3">Localidade</td><td class="p-3">Agrupamento por região de transporte</td></tr>
+        <tr><td class="p-3 font-mono text-xs">d.fx_rfpc</td><td class="p-3">Faixa de renda per capita</td><td class="p-3">Pobreza + extrema pobreza (faixas 1+2, até R$ 218)</td></tr>
+        <tr><td class="p-3 font-mono text-xs">d.vlr_renda_media_fam</td><td class="p-3">Renda per capita (R$)</td><td class="p-3">Média e mediana de renda</td></tr>
+        <tr><td class="p-3 font-mono text-xs">d.marc_pbf</td><td class="p-3">Beneficiária do PBF</td><td class="p-3">Cobertura e vulnerabilidade</td></tr>
+        <tr><td class="p-3 font-mono text-xs">d.cod_local_domic_fam</td><td class="p-3">Situação urbana/rural</td><td class="p-3">Validação da premissa das regiões (rural fora das rotas)</td></tr>
+        <tr><td class="p-3 font-mono text-xs">p.cod_trabalhou_memb</td><td class="p-3">Trabalhou na semana</td><td class="p-3">Indicador de trabalho (18+: 32,7%)</td></tr>
+        <tr><td class="p-3 font-mono text-xs">p.cod_trabalho_12_meses_memb</td><td class="p-3">Trabalho remunerado 12 meses</td><td class="p-3">Indicador de trabalho (3.545 pessoas)</td></tr>
+        <tr><td class="p-3 font-mono text-xs">p.cod_principal_trab_memb</td><td class="p-3">Ocupação principal</td><td class="p-3">Perfil de ocupação (1.546 carteira, 939 autônomos...)</td></tr>
+        <tr><td class="p-3 font-mono text-xs">fx_renda_individual_805/808/809</td><td class="p-3">Faixas de renda individual e por fonte</td><td class="p-3">Renda do trabalho e fontes (aposentadoria/BPC 16,7%)</td></tr>
+        <tr><td class="p-3 font-mono text-xs">p.dta_nasc_pessoa</td><td class="p-3">Data de nascimento</td><td class="p-3">Idade (18+; "não se aplica" &lt;10 anos)</td></tr>
+        <tr><td class="p-3 font-mono text-xs">p.cod_est_cadastral_memb</td><td class="p-3">Estado cadastral</td><td class="p-3">Qualidade (100% cadastrados)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mt-8 mb-4">Notas metodológicas (uso correto dos campos)</h3>
+  <ol class="space-y-3 text-sm text-slate-600 dark:text-slate-400 list-none">
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-400 text-white text-xs font-bold flex-shrink-0">1</span><span><strong class="text-slate-800 dark:text-slate-200">Contagem real de pessoas:</strong> o nº de pessoas por família/região foi obtido pela contagem real na tabela de pessoas (join por d.cod_familiar_fam), e não pelo campo declarado d.qtd_pessoas_domic_fam (inconsistente em 9,3% das famílias).</span></li>
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-400 text-white text-xs font-bold flex-shrink-0">2</span><span><strong class="text-slate-800 dark:text-slate-200">Cortes de renda vigentes:</strong> usados R$ 109 (extrema pobreza) e R$ 218 (pobreza), conforme a legislação atual do CadÚnico/Bolsa Família — o dicionário distribuído trazia valores desatualizados (R$ 89/R$ 178).</span></li>
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-400 text-white text-xs font-bold flex-shrink-0">3</span><span><strong class="text-slate-800 dark:text-slate-200">"Pobreza + extrema pobreza"</strong> = faixas fx_rfpc 1 e 2 (renda per capita até R$ 218): 2.649 famílias (45,7%).</span></li>
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-400 text-white text-xs font-bold flex-shrink-0">4</span><span><strong class="text-slate-800 dark:text-slate-200">Trabalho:</strong> células vazias de p.cod_trabalhou_memb foram classificadas por idade calculada — "Não se aplica (menor de 10 anos)" para menores de 10 anos; percentuais informados por denominador (18+ / total).</span></li>
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-400 text-white text-xs font-bold flex-shrink-0">5</span><span><strong class="text-slate-800 dark:text-slate-200">Renda:</strong> média e mediana apresentadas em conjunto (a média é sensível a outliers; a mediana R$ 397 revela a renda real).</span></li>
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-400 text-white text-xs font-bold flex-shrink-0">6</span><span><strong class="text-slate-800 dark:text-slate-200">Validações:</strong> 0 códigos fora do domínio nas variáveis categóricas; datas 100% válidas (nenhuma futura); 1 registro com idade >100 anos e 1 par de pessoas duplicado (impurezas mínimas reportadas).</span></li>
+    <li class="flex items-start gap-3"><span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-400 text-white text-xs font-bold flex-shrink-0">7</span><span><strong class="text-slate-800 dark:text-slate-200">"Outras localidades"</strong> reúne bairros da sede e 320 famílias rurais (717 pessoas) fora das 8 rotas — não cobertas pela planilha de transporte.</span></li>
+  </ol>
+
+  <p class="text-xs text-slate-400 mt-6">Documento completo dos campos e da auditoria: METODOLOGIA_DIAGNOSTICO.txt no repositório.</p>
+</div>
