@@ -20,8 +20,7 @@ O material percorre:
 
 | Parte | Conteúdo |
 |---|---|
-| **Fundamentos e Planejamento** | Conceitos, base normativa e organização do diagnóstico |
-| **Modelos prontos** | Portaria e Resolução do CMAS |
+| **Fundamentos e Planejamento** | Conceitos e organização do diagnóstico |
 | **Método e Aplicação** | Quem realiza e como aplicar o roteiro na prática |
 | **Exemplo aplicado** | Diagnóstico passo a passo do município de Silva Jardim (RJ), em **5 etapas**: problema, perfil de renda, acessibilidade e transporte, capacidade vs. demanda e proposta |
 
